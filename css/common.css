@@ -1,0 +1,27 @@
+html,body {
+    margin: 0;
+    background: #bcbcbc;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*모든 태그를 말함. 우선순위가 강함*/
