@@ -42,77 +42,113 @@ a {
 
 
 /*=========header============*/
-header {}
+header {
+    background: #fff;
+    height: 26vh;
 
-header article {
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px;
+
+}
+
+header .top {
     position: relative;
+    width: 60%;
+    margin: 0 auto;
+
 }
 
-header article h1 {
+header .top h1 {
+    height: 20vh;
     text-align: center;
-}
-
-header article h1 a {}
-
-header article h1 a img {}
-
-header article ul {
-    position: absolute;
-    right: 20px;
-    top: 30px;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    opacity: 1;
 }
 
-header article ul li {
-    padding: 0 10px;
-}
-
-header article ul li a {
+header .top h1 a {
+    font-size: 50px;
     color: #333;
 }
 
-header nav {
-    background: #333;
+header .top .gnb {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+header .gnb a {
+    color: #333;
     padding: 20px;
-    margin: 0 auto;
 }
 
-header nav ul {
+
+header nav {
+    width: 100%;
+    height: 6vh;
+    background: #333;
+    font-size: 20px;
+    text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    word-spacing: 150px;
+
 }
 
-header nav ul li {
-    padding: 0 70px;
-}
 
-header nav ul li a {
+header nav a {
     color: #fff;
     position: relative;
+    text-decoration: none;
 }
 
-header nav ul li a:after {
+header nav a:after {
     content: '';
-    width: 100%;
-    height: 2px;
-    background: #fff;
     position: absolute;
+    height: 2px;
+    width: 70px;
+    background: white;
     left: 0;
-    bottom: -10px;
+    bottom: -5px;
     opacity: 0;
-    transition: 1s;
 }
 
-header nav ul li:hover a:after {
+header nav a:hover {}
+
+header nav a:hover:after {
     opacity: 1;
 }
+
+
+/*====footer====*/
+
+
+footer {
+    background: #333;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 160px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer > ul li p {
+    color: #777;
+    white-space: pre-line;
+}
+
+footer > ul li:nth-of-type(2) a {
+    padding: 10px;
+}
+
+
+/*========================================*/
+
 
 
 /*버거메뉴*/
@@ -158,38 +194,6 @@ header nav ul li:hover a:after {
 }
 
 
-/*====footer====*/
-footer {
-    background: #333;
-}
-
-.footer {
-    margin: 0 auto;
-    width: 1080px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer p {
-    font-size: 12px;
-    line-height: 1.5;
-    white-space: pre-line;
-    color: #777;
-}
-
-.footer ul {
-    display: flex;
-}
-
-.footer ul li {
-    padding: 0 10px;
-}
-
-.footer ul li a {}
-
-.footer ul li a img {}
 
 
 /*=========반응형============*/
